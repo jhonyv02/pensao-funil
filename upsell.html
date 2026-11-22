@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="funnel-pages.css">
-  <!-- Apenas PageView nesta etapa. O pagamento e o evento Purchase pertencem à Wiven. -->
+  <!-- Meta Pixel: PageView e UpsellView (evento personalizado). Purchase apenas na Wiven. -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -20,6 +20,11 @@
     (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init','1186425164337289');
     fbq('track','PageView');
+    // Evento personalizado para identificar a etapa do funil sem gerar uma compra.
+    fbq('trackCustom', 'UpsellView', {
+      funnel_stage: 'upsell',
+      product: 'Caderno da Pensao e da Convivencia'
+    });
   </script>
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1186425164337289&amp;ev=PageView&amp;noscript=1"></noscript>
 </head>
