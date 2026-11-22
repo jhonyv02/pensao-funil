@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <!-- Meta Pixel: uma inicialização e um PageView por página. Eventos de compra ficam com a Wiven. -->
+  <!-- Meta Pixel: PageView e ViewContent na pagina de vendas. Purchase somente na Wiven apos pagamento confirmado. -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -11,6 +11,11 @@
     (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1186425164337289');
     fbq('track', 'PageView');
+    // Visualizacao da oferta principal: nao representa compra.
+    fbq('track', 'ViewContent', {
+      content_name: 'Caderno da Pensao e da Convivencia',
+      content_type: 'product'
+    });
   </script>
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1186425164337289&ev=PageView&noscript=1"></noscript>
 
