@@ -2,719 +2,275 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <!-- Meta Pixel: PageView e ViewContent na pagina de vendas. Purchase somente na Wiven apos pagamento confirmado. -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#143f2f">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Caderno da Pensão e da Convivência | Organize seu caso</title>
+  <meta name="description" content="Pensão atrasada? Caderno digital com 29 páginas para organizar pagamentos, atrasos, documentos, despesas e convivência. PDF preenchível e imprimível por R$ 19,90.">
+  <link rel="canonical" href="https://mundoimprimivel.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Caderno da Pensão e da Convivência">
+  <meta property="og:description" content="29 páginas para registrar pagamentos, atrasos, gastos, provas e visitas. Material digital preenchível e imprimível.">
+  <meta property="og:image" content="https://mundoimprimivel.online/assets/mockup-hero-premium.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/mockup-hero-premium.webp" as="image" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="landing-v2.css">
+
+  <!-- Meta Pixel: pageview + visualizacao de produto. Compra somente na Wiven. -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
     (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1186425164337289');
-    fbq('track', 'PageView');
-    // Visualizacao da oferta principal: nao representa compra.
-    fbq('track', 'ViewContent', {
-      content_name: 'Caderno da Pensao e da Convivencia',
-      content_type: 'product'
-    });
+    fbq('init','1186425164337289');
+    fbq('track','PageView');
+    fbq('track','ViewContent',{content_name:'Caderno da Pensao e da Convivencia',content_type:'product'});
   </script>
-  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1186425164337289&ev=PageView&noscript=1"></noscript>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2f5644">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Caderno da Pensão e da Convivência: PDF A4 com 29 páginas para organizar pagamentos, provas, gastos e visitas quando a pensão atrasa. Preenchível e imprimível. R$ 19,90.">
-  <title>Caderno da Pensão e da Convivência · o que fazer nas próximas 48 horas</title>
-  <link rel="canonical" href="https://jhonyv02.github.io/pensao-funil/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Caderno da Pensão e da Convivência">
-  <meta property="og:description" content="Pensão atrasada? Um caderno em PDF para organizar pagamentos, provas e visitas e chegar ao atendimento com tudo em ordem. R$ 19,90.">
-  <meta property="og:image" content="https://jhonyv02.github.io/pensao-funil/assets/capa-caderno-og.jpg">
-  <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #f6f4ee;
-      --bg-deep: #efebe3;
-      --paper: #fffefb;
-      --sage: #3f6b57;
-      --sage-dark: #2f5644;
-      --sage-soft: #e7efe9;
-      --sand: #efe8da;
-      --clay: #c08a5b;
-      --ink: #2b3a33;
-      --muted: #5c6a62;
-      --border: #e3ddd0;
-      --shadow: 0 10px 30px rgba(40, 52, 45, .08);
-      --shadow-lift: 0 18px 44px rgba(40, 52, 45, .14);
-      --radius: 18px;
-      --font-title: "Lora", Georgia, serif;
-      --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --checkout: https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 76px; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    img { display: block; max-width: 100%; height: auto; }
-    a { color: inherit; }
-    a:focus-visible, summary:focus-visible, button:focus-visible {
-      outline: 3px solid var(--clay);
-      outline-offset: 4px;
-    }
-    ::selection { background: var(--sage-soft); color: var(--sage-dark); }
-    .sr-only {
-      position: absolute !important;
-      width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
-    }
-    .container { width: min(100% - 36px, 1080px); margin-inline: auto; }
-    .section { padding: 48px 0; }
-    .center { text-align: center; }
-    .eyebrow {
-      margin: 0 0 10px;
-      color: var(--sage);
-      font-weight: 800;
-      font-size: .76rem;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .section-title {
-      margin: 0 auto 14px;
-      max-width: 760px;
-      font: 600 clamp(1.45rem, 5.4vw, 2.15rem)/1.22 var(--font-title);
-      color: var(--sage-dark);
-      letter-spacing: -.015em;
-      text-wrap: balance;
-    }
-    .section-intro {
-      color: var(--muted);
-      max-width: 640px;
-      margin: 0 auto 28px;
-      font-size: 1.04rem;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      width: 100%;
-      min-height: 54px;
-      padding: 14px 22px;
-      border: 0;
-      border-radius: 14px;
-      background: var(--sage);
-      color: #fbfaf5;
-      font-family: var(--font-body);
-      font-size: 1.05rem;
-      font-weight: 800;
-      text-decoration: none;
-      box-shadow: 0 7px 0 var(--sage-dark), 0 14px 24px rgba(47, 86, 68, .18);
-      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-    }
-    .button:hover { background: #355c4b; transform: translateY(-2px); box-shadow: 0 9px 0 var(--sage-dark), 0 16px 28px rgba(47, 86, 68, .22); }
-    .button:active { transform: translateY(4px); box-shadow: 0 3px 0 var(--sage-dark); }
-    .button .arrow { font-size: 1.15em; font-weight: 800; }
-    .small-note { margin: 12px 0 0; color: var(--muted); font-size: .88rem; text-align: center; }
-
-    .site-header {
-      position: sticky; top: 0; z-index: 20;
-      background: rgba(246, 244, 238, .92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-    .header-row {
-      min-height: 68px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .brand { display: flex; gap: 10px; align-items: center; text-decoration: none; color: var(--sage-dark); }
-    .brand-mark {
-      display: grid; place-items: center;
-      width: 40px; height: 40px;
-      border-radius: 12px;
-      background: var(--sage-soft);
-      color: var(--sage);
-      font: 700 1.05rem var(--font-title);
-    }
-    .brand-text { font: 700 1rem/1.1 var(--font-title); }
-    .brand-text span { display: block; color: var(--sage); font-family: var(--font-body); font-size: .72rem; font-weight: 800; letter-spacing: .04em; margin-top: 2px; }
-    .top-link {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-height: 42px; padding: 8px 14px;
-      background: var(--sage); color: #fbfaf5;
-      border-radius: 11px; text-decoration: none;
-      font-weight: 800; font-size: .88rem;
-      white-space: nowrap;
-    }
-    .top-link:hover { background: var(--sage-dark); }
-
-    .hero {
-      padding: 28px 0 36px;
-      background: linear-gradient(180deg, #edf2ee 0%, var(--bg) 100%);
-    }
-    .hero-grid { display: grid; gap: 28px; align-items: center; }
-    .hero-copy { text-align: center; }
-    .hero h1 {
-      font: 600 clamp(1.7rem, 7.2vw, 2.85rem)/1.15 var(--font-title);
-      color: var(--sage-dark);
-      margin: 0 0 14px;
-      letter-spacing: -.02em;
-      text-wrap: balance;
-    }
-    .hero-lead { margin: 0 auto 12px; max-width: 560px; color: var(--muted); font-size: 1.05rem; }
-    .hero-support { margin: 0 auto 18px; max-width: 520px; color: var(--sage-dark); font: 500 1.02rem/1.5 var(--font-title); font-style: italic; }
-    .hero-benefits { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 0 auto 22px; padding: 0; list-style: none; }
-    .hero-benefits li {
-      padding: 6px 11px;
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--sage-dark);
-      font-size: .78rem;
-      font-weight: 800;
-    }
-    .hero-actions { max-width: 440px; margin-inline: auto; }
-    .hero-visual { width: min(100%, 560px); margin: 0 auto; min-width: 0; }
-    .hero-visual img {
-      width: 100%;
-      border-radius: 20px;
-    }
-
-    .pain { background: var(--paper); border-block: 1px solid var(--border); }
-    .pain-grid { display: grid; gap: 12px; max-width: 760px; margin: 0 auto; }
-    .pain-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px 18px;
-      color: var(--ink);
-    }
-    .pain-card p { margin: 0; }
-    .pain-card strong { color: var(--sage-dark); }
-    .bridge {
-      max-width: 720px;
-      margin: 28px auto 0;
-      background: var(--sage-soft);
-      border-radius: 16px;
-      padding: 20px 22px;
-      text-align: center;
-    }
-    .bridge p { margin: 0; color: var(--sage-dark); font-size: 1.05rem; }
-
-    .mockup-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; margin-top: 8px; }
-    .mockup-card { margin: 0; min-width: 0; max-width: 100%; }
-    .mockup-card img { width: 100%; height: auto; border-radius: 16px; }
-    .mockup-card figcaption { margin-top: 10px; text-align: center; color: var(--muted); font-size: .9rem; font-weight: 700; }
-
-    .includes { list-style: none; margin: 0 auto; padding: 0; max-width: 760px; display: grid; gap: 12px; }
-    .includes li {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 14px;
-      align-items: flex-start;
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 16px 18px;
-      box-shadow: var(--shadow);
-    }
-    .includes .num {
-      display: grid; place-items: center;
-      width: 32px; height: 32px; margin-top: 2px;
-      border-radius: 50%;
-      background: var(--sage-soft);
-      color: var(--sage-dark);
-      font: 700 .9rem var(--font-title);
-    }
-    .includes h3 { margin: 0 0 6px; font: 600 1.08rem/1.3 var(--font-title); color: var(--sage-dark); }
-    .includes .pages { display: block; font-family: var(--font-body); font-weight: 700; font-size: .8rem; color: var(--muted); margin: 2px 0 6px; }
-    .includes p { margin: 0; color: var(--muted); font-size: .95rem; }
-    .includes ul { margin: 8px 0 0; padding: 0 0 0 18px; color: var(--ink); font-size: .93rem; }
-    .includes li li { display: list-item; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; margin: 0 0 4px; }
-
-    .gallery-section { background: var(--bg-deep); border-block: 1px solid var(--border); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .gallery-item {
-      margin: 0;
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 8px;
-      box-shadow: var(--shadow);
-    }
-    .gallery-item img { width: 100%; border-radius: 8px; border: 1px solid #ece7dc; }
-    .gallery-item figcaption { text-align: center; font-size: .82rem; font-weight: 700; color: var(--muted); padding: 8px 4px 2px; }
-
-    .steps-grid { display: grid; gap: 14px; max-width: 900px; margin: 0 auto; }
-    .step {
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px 18px;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-    .step-num {
-      display: grid; place-items: center;
-      width: 40px; height: 40px; margin: 0 auto 10px;
-      border-radius: 50%;
-      background: var(--sage);
-      color: #fbfaf5;
-      font: 700 1.1rem var(--font-title);
-    }
-    .step h3 { margin: 0 0 6px; font: 600 1.1rem var(--font-title); color: var(--sage-dark); }
-    .step p { margin: 0; color: var(--muted); font-size: .95rem; }
-
-    .audience-list { list-style: none; margin: 0 auto; padding: 0; max-width: 700px; display: grid; gap: 10px; text-align: left; }
-    .audience-list li {
-      display: flex; gap: 12px; align-items: flex-start;
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px 16px;
-    }
-    .audience-list .dot {
-      flex: 0 0 10px; width: 10px; height: 10px; margin-top: 8px;
-      border-radius: 50%; background: var(--sage);
-      box-shadow: 0 0 0 4px var(--sage-soft);
-    }
-    .audience-list p { margin: 0; }
-
-    .not-this {
-      max-width: 760px;
-      margin: 0 auto;
-      background: var(--sand);
-      border: 1px solid #e2d6bf;
-      border-radius: 18px;
-      padding: 24px 22px;
-    }
-    .not-this h2 { text-align: left; margin-left: 0; margin-right: 0; }
-    .not-this p { margin: 0; color: var(--ink); font-size: .98rem; }
-    .not-this .eyebrow { text-align: left; }
-
-    .pricing { background: var(--paper); border-block: 1px solid var(--border); }
-    .price-card {
-      max-width: 520px;
-      margin: 0 auto;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-lift);
-    }
-    .price-bar { background: var(--sage); color: #fbfaf5; text-align: center; font-weight: 800; padding: 12px 16px; font-size: .92rem; letter-spacing: .02em; }
-    .price-content { padding: 26px 22px 24px; text-align: center; }
-    .price-overline { margin: 0; color: var(--muted); font-size: .9rem; font-weight: 700; }
-    .price-value { margin: 6px 0 4px; font: 700 2.7rem/1.1 var(--font-title); color: var(--sage-dark); }
-    .price-description { margin: 0 0 16px; color: var(--muted); font-size: .95rem; }
-    .price-list { list-style: none; margin: 0 0 20px; padding: 0; text-align: left; display: grid; gap: 8px; }
-    .price-list li { padding-left: 22px; position: relative; color: var(--ink); font-size: .95rem; }
-    .price-list li::before { content: ""; position: absolute; left: 4px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--sage); }
-    .extras-note {
-      max-width: 640px;
-      margin: 22px auto 0;
-      color: var(--muted);
-      font-size: .9rem;
-      text-align: center;
-    }
-
-    .guarantee-card {
-      max-width: 720px;
-      margin: 0 auto;
-      display: grid;
-      gap: 16px;
-      background: var(--paper);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px 22px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-    .guarantee-icon {
-      display: grid; place-items: center;
-      width: 56px; height: 56px; margin: 0 auto;
-      border-radius: 50%;
-      background: var(--sage-soft);
-      color: var(--sage-dark);
-      font-size: 1.4rem;
-    }
-    .guarantee-card h2 { margin: 0 0 8px; font: 600 1.35rem/1.25 var(--font-title); color: var(--sage-dark); }
-    .guarantee-card p { margin: 0; color: var(--muted); }
-
-    .faq-wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 10px; }
-    .faq details { border: 1px solid var(--border); border-radius: 14px; background: var(--paper); padding: 0 16px; }
-    .faq details[open] { border-color: #c9d7ce; }
-    .faq summary {
-      list-style: none; cursor: pointer;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      padding: 16px 0;
-      color: var(--sage-dark); font-weight: 800; line-height: 1.4;
-    }
-    .faq summary::-webkit-details-marker { display: none; }
-    .faq summary::after {
-      content: "+";
-      display: grid; place-items: center;
-      flex-shrink: 0; width: 26px; height: 26px;
-      border-radius: 50%;
-      color: var(--sage); background: var(--sage-soft);
-      font: 700 1.15rem var(--font-title);
-    }
-    .faq details[open] summary::after { content: "−"; }
-    .faq details p { margin: -2px 0 16px; color: var(--muted); font-size: .96rem; }
-    .faq-end { max-width: 440px; margin: 28px auto 0; text-align: center; }
-    .faq-end p { font-weight: 700; color: var(--sage-dark); margin: 0 0 16px; font-family: var(--font-title); font-size: 1.2rem; }
-
-    .footer { background: var(--sage-dark); color: #e6efe9; padding: 28px 0 24px; text-align: center; }
-    .footer strong { font: 600 1.08rem var(--font-title); }
-    .footer p { color: #c8d8ce; font-size: .82rem; margin: 8px 0 0; }
-    .footer a { color: #fff; }
-
-    @media (min-width: 720px) {
-      .container { width: min(100% - 56px, 1080px); }
-      .section { padding: 64px 0; }
-      .header-row { min-height: 74px; }
-      .brand-text { font-size: 1.08rem; }
-      .hero { padding: 48px 0 56px; }
-      .hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 40px; }
-      .hero-copy { text-align: left; }
-      .hero-lead, .hero-support { margin-left: 0; }
-      .hero-benefits { justify-content: flex-start; }
-      .hero-actions { margin: 0; }
-      .hero-actions .small-note { text-align: left; }
-      .hero-visual { width: 100%; margin: 0; }
-      .button { width: auto; min-width: 320px; }
-      .includes .pages { display: inline; margin: 0 0 0 6px; }
-      .gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-      .steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-      .mockup-pair { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 24px; align-items: center; }
-      .guarantee-card { grid-template-columns: auto 1fr; text-align: left; align-items: center; padding: 28px 32px; }
-      .guarantee-icon { margin: 0; }
-    }
-  </style>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1186425164337289&amp;ev=PageView&amp;noscript=1"></noscript>
 </head>
 <body>
-  <a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início da página">
+      <span class="brand-icon" aria-hidden="true">C</span>
+      <span>Caderno da Pensão<small>e da Convivência</small></span>
+    </a>
+    <a class="nav-action" href="#previas">Ver o material</a>
+  </div>
+</header>
 
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="#inicio" aria-label="Caderno da Pensão e da Convivência — início">
-        <span class="brand-mark" aria-hidden="true">CP</span>
-        <span class="brand-text">Caderno da Pensão <span>E DA CONVIVÊNCIA</span></span>
-      </a>
-      <a class="top-link" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero o caderno</a>
-    </div>
-  </header>
-
-  <main id="conteudo">
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Caderno em PDF · A4 · 29 páginas · preenchível e imprimível</p>
-          <h1 id="hero-title">Pensão atrasada? Saiba o que fazer nas próximas 48 horas.</h1>
-          <p class="hero-lead">Um caderno para preencher no celular, no computador ou impresso. Ele mostra o primeiro passo e ajuda você a organizar pagamentos, provas, gastos da criança e visitas, para chegar à Defensoria ou ao(à) advogado(a) com tudo em ordem.</p>
-          <p class="hero-support">Respire. Você não precisa resolver tudo hoje. Só precisa dar o primeiro passo com calma.</p>
-          <ul class="hero-benefits" aria-label="O que o caderno reúne">
-            <li>Roteiro de 48 horas</li>
-            <li>Pagamentos e atrasos</li>
-            <li>Provas e gastos</li>
-            <li>Visitas</li>
-            <li>Ficha-resumo</li>
-          </ul>
-          <div class="hero-actions">
-            <a class="button" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero o meu caderno por R$ 19,90 <span class="arrow" aria-hidden="true">→</span></a>
-            <p class="small-note">Pagamento único · acesso imediato por e-mail · garantia de 7 dias</p>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="assets/mockup-hero-premium.webp" width="800" height="600" alt="Caderno da Pensão impresso, com páginas internas e o arquivo aberto no celular" fetchpriority="high">
-        </div>
-      </div>
-    </section>
-
-    <section class="section pain" aria-labelledby="dor-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">A cena é conhecida</span>
-          <h2 class="section-title" id="dor-title">A pensão não caiu de novo. E você está pagando tudo sozinho(a).</h2>
-        </div>
-        <div class="pain-grid">
-          <div class="pain-card"><p>Escola, remédio, comida, roupa: a conta chega, e o valor que deveria entrar não entra.</p></div>
-          <div class="pain-card"><p>A cabeça vira um nó: <strong>“Por onde eu começo? Tenho prova? Guardei aquele print? Quanto ele já deve?”</strong></p></div>
-          <div class="pain-card"><p>Na hora de ir à Defensoria ou ao(à) advogado(a), tudo está espalhado pelo WhatsApp, pelo extrato do banco e pela memória.</p></div>
-        </div>
-        <div class="bridge">
-          <p>O Caderno da Pensão e da Convivência não é um texto longo sobre a lei. É um caderno de trabalho. Você abre, segue o roteiro, preenche as tabelas e sai com o seu caso organizado em uma pasta.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dentro" aria-labelledby="dentro-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">O que tem dentro</span>
-          <h2 class="section-title" id="dentro-title">29 páginas para organizar o caso, passo a passo</h2>
-          <p class="section-intro">O conteúdo abaixo é o que está no PDF de verdade, não uma lista genérica.</p>
-        </div>
-        <ol class="includes">
-          <li>
-            <span class="num" aria-hidden="true">1</span>
-            <div>
-              <h3>Roteiro das primeiras 48 horas <span class="pages">págs. 5 a 9</span></h3>
-              <ul>
-                <li>Checklist das primeiras 24 horas: localizar o documento que definiu a pensão, conferir o extrato, fazer a cópia de segurança das conversas sem apagar nada.</li>
-                <li>Checklist de 24 a 48 horas: reunir documentos, numerar as provas, procurar e agendar o atendimento.</li>
-                <li>Tabela “Meu plano para os próximos dias” e 6 cuidados do que evitar nestes dias.</li>
-                <li>6 modelos de mensagem neutra e uma página de anotações para organizar a cabeça.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <span class="num" aria-hidden="true">2</span>
-            <div>
-              <h3>Registro de pagamentos e atrasos <span class="pages">págs. 10 a 12</span></h3>
-              <p>Tabela mês a mês com valor devido, valor pago, data do pagamento e dias de atraso, para 2 anos. No fim de cada ano: total devido, total pago e diferença em aberto — a sua conta, para referência.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num" aria-hidden="true">3</span>
-            <div>
-              <h3>Organização de provas <span class="pages">págs. 13 a 20</span></h3>
-              <p>O que guardar, 5 regras para cada prova (numeração P01, P02…, prints inteiros, duas cópias), 6 pastas prontas para criar no celular, índice com 40 linhas, registro de conversas e registro de gastos da criança.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num" aria-hidden="true">4</span>
-            <div>
-              <h3>Convivência e visitas <span class="pages">págs. 21 a 24</span></h3>
-              <p>Página do combinado de convivência (rotina, feriados, férias e local de entrega), registro de visitas (Sim / Não / Parcial, horário combinado x horário real) e ficha de ocorrências importantes, para escrever “como um repórter”.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num" aria-hidden="true">5</span>
-            <div>
-              <h3>Documentos e atendimento <span class="pages">págs. 25 a 28</span></h3>
-              <p>Checklist de documentos, página de contatos e protocolos, <strong>ficha-resumo do caso em 1 página</strong> para levar impressa ou no celular, e 8 perguntas para fazer no atendimento, com espaço para as respostas.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section gallery-section" id="previas" aria-labelledby="gallery-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">Páginas reais do material</span>
-          <h2 class="section-title" id="gallery-title">Veja por dentro do caderno</h2>
-          <p class="section-intro">Estas são páginas do PDF, não ilustrações inventadas.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="assets/preview-p01.webp" width="782" height="1100" alt="Capa interna do Caderno da Pensão e da Convivência">
-            <figcaption>Capa interna</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p05.webp" width="782" height="1100" alt="Página do roteiro das primeiras 24 horas, com checklist">
-            <figcaption>Roteiro das 24 horas</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p08.webp" width="782" height="1100" alt="Página com modelos de mensagens neutras">
-            <figcaption>Mensagens neutras</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p11.webp" width="782" height="1100" alt="Tabela de pagamentos do ano 1">
-            <figcaption>Tabela de pagamentos</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p13.webp" width="782" height="1100" alt="Página de organização de provas">
-            <figcaption>Organização de provas</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p22.webp" width="782" height="1100" alt="Página de registro de visitas">
-            <figcaption>Registro de visitas</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p25.webp" width="782" height="1100" alt="Checklist de documentos para o atendimento">
-            <figcaption>Checklist de documentos</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/preview-p27.webp" width="782" height="1100" alt="Ficha-resumo do caso para levar ao atendimento">
-            <figcaption>Ficha-resumo</figcaption>
-          </figure>
-        </div>
-
-        <div class="mockup-pair" style="margin-top:28px">
-          <figure class="mockup-card">
-            <img src="assets/mockup-caderno-aberto.webp" width="1600" height="1184" alt="Caderno impresso aberto: à esquerda o roteiro das 48 horas; à direita a tabela de pagamentos do ano 1">
-            <figcaption>O caderno impresso, aberto no roteiro e na tabela de pagamentos</figcaption>
-          </figure>
-          <figure class="mockup-card">
-            <img src="assets/mockup-pilha.webp" width="1600" height="1333" alt="Pilha de páginas impressas do caderno, com a capa na frente">
-            <figcaption>As páginas prontas para imprimir e guardar numa pasta</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="como-funciona" aria-labelledby="steps-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">Como funciona</span>
-          <h2 class="section-title" id="steps-title">Da compra à organização, em 3 passos</h2>
-        </div>
-        <div class="steps-grid">
-          <div class="step">
-            <div class="step-num" aria-hidden="true">1</div>
-            <h3>Você compra e recebe o PDF</h3>
-            <p>O arquivo chega no e-mail na hora, depois da confirmação do pagamento.</p>
-          </div>
-          <div class="step">
-            <div class="step-num" aria-hidden="true">2</div>
-            <h3>Preenche no celular ou no papel</h3>
-            <p>Abre no Adobe Acrobat Reader, no navegador ou no app de PDF do celular e digita nos campos. Se preferir, imprime e preenche à mão.</p>
-          </div>
-          <div class="step">
-            <div class="step-num" aria-hidden="true">3</div>
-            <h3>Começa pelo roteiro de 48 horas</h3>
-            <p>Segue o checklist, organiza as provas e leva a ficha-resumo ao atendimento.</p>
-          </div>
-        </div>
-        <div class="mockup-pair" style="margin-top:32px">
-          <figure class="mockup-card">
-            <img src="assets/mockup-tablet.webp" width="1500" height="1333" alt="Tablet mostrando a capa interna do caderno em PDF">
-            <figcaption>No tablet ou no computador</figcaption>
-          </figure>
-          <figure class="mockup-card">
-            <img src="assets/mockup-celular.webp" width="1152" height="1400" alt="Celular com o roteiro das primeiras 48 horas aberto no aplicativo de PDF">
-            <figcaption>Ou direto no celular</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background:var(--paper);border-block:1px solid var(--border)" aria-labelledby="audience-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">Para quem é</span>
-          <h2 class="section-title" id="audience-title">Feito para quem cuida da criança e precisa organizar o caso</h2>
-        </div>
-        <ul class="audience-list">
-          <li><span class="dot" aria-hidden="true"></span><p>Mães e pais com pensão definida (sentença ou acordo homologado) que está atrasada ou é paga a menos.</p></li>
-          <li><span class="dot" aria-hidden="true"></span><p>Quem precisa começar a registrar gastos, conversas e visitas.</p></li>
-          <li><span class="dot" aria-hidden="true"></span><p>Quem ainda não tem pensão definida também pode usar para organizar gastos e convivência. O primeiro passo, nesse caso, é buscar orientação para pedir a fixação.</p></li>
+<main id="conteudo">
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <p class="hero-kicker">Material digital · 29 páginas</p>
+        <h1 id="hero-title">Pensão atrasada?<br><em>Comece a organizar seu caso nas próximas 48 horas.</em></h1>
+        <p class="hero-lead">Um caderno para colocar pagamentos, comprovantes, gastos da criança e registros de visitas em ordem — sem precisar lembrar tudo de cabeça.</p>
+        <ul class="hero-list">
+          <li>Roteiro prático para começar</li>
+          <li>Tabelas para registrar atrasos e pagamentos</li>
+          <li>Checklist para preparar documentos e atendimento</li>
         </ul>
-      </div>
-    </section>
-
-    <section class="section" id="aviso" aria-labelledby="aviso-title">
-      <div class="container">
-        <div class="not-this">
-          <p class="eyebrow">Leia com atenção</p>
-          <h2 class="section-title" id="aviso-title">O que este caderno não é</h2>
-          <p>Este é um material educativo e de organização. Não é aconselhamento jurídico e não substitui advogado(a), a Defensoria Pública nem uma decisão judicial. Não garante que a pensão será paga, que o devedor será preso nem nenhum resultado no processo. Em situação de violência ou risco, ligue 190 ou 180.</p>
+        <div class="hero-offer">
+          <a class="button checkout-link" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero meu caderno por R$ 19,90 <span class="button-arrow" aria-hidden="true">→</span></a>
+          <p class="hero-note">Pagamento único · PDF enviado por e-mail após confirmação · garantia de 7 dias</p>
         </div>
       </div>
-    </section>
+      <figure class="hero-image">
+        <img src="assets/mockup-hero-premium.webp" alt="Caderno da Pensão e da Convivência com páginas impressas e visualização do PDF no celular" width="800" height="600" fetchpriority="high" decoding="async">
+        <figcaption>Visualização ilustrativa do material digital · você recebe o PDF, não um livro físico.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <section class="section pricing" id="preco" aria-labelledby="pricing-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">A oferta</span>
-          <h2 class="section-title" id="pricing-title">Caderno da Pensão e da Convivência</h2>
+  <div class="proof-strip" aria-label="Informações essenciais sobre o produto">
+    <div class="container proof-grid">
+      <div class="proof"><b>29 páginas</b>Preenchível e imprimível</div>
+      <div class="proof"><b>PDF digital</b>Para celular ou computador</div>
+      <div class="proof"><b>7 dias</b>Prazo de reembolso</div>
+    </div>
+  </div>
+
+  <section class="section section-alt" id="problema" aria-labelledby="pain-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Quando a pensão atrasa</p>
+        <h2 id="pain-title">O difícil não é só a conta. É ter que organizar tudo no meio da preocupação.</h2>
+        <p class="section-lead">Extrato em um lugar, conversa em outro, comprovante na galeria e datas que ninguém anotou.</p>
+      </div>
+      <div class="pain-list">
+        <article class="pain-item">
+          <span class="pain-symbol" aria-hidden="true">01</span>
+          <div><h3>Pagamentos que não batem</h3><p>Qual mês ficou pendente? O que foi pago? Em qual data?</p></div>
+        </article>
+        <article class="pain-item">
+          <span class="pain-symbol" aria-hidden="true">02</span>
+          <div><h3>Comprovantes espalhados</h3><p>Prints, extratos, recibos e mensagens difíceis de localizar.</p></div>
+        </article>
+        <article class="pain-item">
+          <span class="pain-symbol" aria-hidden="true">03</span>
+          <div><h3>Atendimento sem resumo</h3><p>Chega a hora de buscar orientação e fica difícil explicar a sequência dos fatos.</p></div>
+        </article>
+      </div>
+      <div class="bridge">O Caderno não resolve a pensão por você. Ele ajuda a reunir as informações para que o próximo passo seja menos confuso.</div>
+    </div>
+  </section>
+
+  <section class="section" id="beneficios" aria-labelledby="benefits-title">
+    <div class="container visual-feature">
+      <figure>
+        <img src="assets/mockup-caderno-aberto.webp" alt="Duas páginas internas reais do caderno aberto com formulários e campos para anotar informações" width="1600" height="1184" loading="lazy" decoding="async">
+        <figcaption>O material foi feito para preencher, imprimir e consultar quando precisar.</figcaption>
+      </figure>
+      <div class="feature-copy">
+        <p class="eyebrow">Menos confusão, mais clareza</p>
+        <h2 id="benefits-title">Não é um livro para ler e esquecer. É um caderno para usar.</h2>
+        <ul class="checks">
+          <li>Registre pagamentos e atrasos mês a mês, por até 2 anos.</li>
+          <li>Organize comprovantes, prints e despesas da criança.</li>
+          <li>Anote acontecimentos e combinados de convivência e visitas.</li>
+          <li>Leve um resumo do caso ao atendimento com advogado(a) ou Defensoria Pública.</li>
+        </ul>
+        <p class="feature-caption">Você pode preencher no celular usando um leitor de PDF compatível ou imprimir as páginas em A4.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pages-section" id="previas" aria-labelledby="pages-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Veja o que você recebe</p>
+        <h2 id="pages-title">Páginas reais do Caderno</h2>
+        <p class="section-lead">Confira os formulários antes de comprar. Não são apenas imagens ilustrativas.</p>
+      </div>
+      <div class="pages-grid">
+        <figure class="page"><img src="assets/preview-p05.webp" width="782" height="1100" alt="Página de roteiro das primeiras 24 horas" loading="lazy" decoding="async"><figcaption>Primeiras 24 horas</figcaption></figure>
+        <figure class="page"><img src="assets/preview-p11.webp" width="782" height="1100" alt="Tabela mensal de pagamentos e atrasos" loading="lazy" decoding="async"><figcaption>Pagamentos e atrasos</figcaption></figure>
+        <figure class="page"><img src="assets/preview-p13.webp" width="782" height="1100" alt="Página de organização de provas e documentos" loading="lazy" decoding="async"><figcaption>Comprovantes e provas</figcaption></figure>
+        <figure class="page"><img src="assets/preview-p27.webp" width="782" height="1100" alt="Ficha-resumo do caso para levar ao atendimento" loading="lazy" decoding="async"><figcaption>Resumo para atendimento</figcaption></figure>
+      </div>
+      <details class="more-pages">
+        <summary>Ver mais 4 páginas do PDF</summary>
+        <div class="pages-grid">
+          <figure class="page"><img src="assets/preview-p01.webp" width="782" height="1100" alt="Capa interna do caderno" loading="lazy" decoding="async"><figcaption>Capa interna</figcaption></figure>
+          <figure class="page"><img src="assets/preview-p08.webp" width="782" height="1100" alt="Página de modelos de mensagens neutras" loading="lazy" decoding="async"><figcaption>Mensagens neutras</figcaption></figure>
+          <figure class="page"><img src="assets/preview-p22.webp" width="782" height="1100" alt="Página de registro de convivência e visitas" loading="lazy" decoding="async"><figcaption>Visitas e convivência</figcaption></figure>
+          <figure class="page"><img src="assets/preview-p25.webp" width="782" height="1100" alt="Checklist de documentos para atendimento" loading="lazy" decoding="async"><figcaption>Checklist de documentos</figcaption></figure>
         </div>
-        <div class="price-card">
-          <div class="price-bar">PDF PREENCHÍVEL E IMPRIMÍVEL</div>
-          <div class="price-content">
-            <p class="price-overline">Pagamento único. Não é assinatura.</p>
-            <p class="price-value">R$ 19,90</p>
-            <p class="price-description">29 páginas · acesso imediato por e-mail</p>
+      </details>
+      <ol class="content-list" aria-label="Conteúdo completo por tema">
+        <li><span class="content-num">1</span><div><strong>Roteiro das primeiras 48 horas</strong><small>Páginas 5 a 9</small><p>Checklists de início, plano para os próximos dias e mensagens neutras.</p></div></li>
+        <li><span class="content-num">2</span><div><strong>Pagamentos e atrasos</strong><small>Páginas 10 a 12</small><p>Registros mensais de valores previstos, pagos e pendentes.</p></div></li>
+        <li><span class="content-num">3</span><div><strong>Provas e gastos</strong><small>Páginas 13 a 20</small><p>Índice de prints, conversas, documentos e gastos da criança.</p></div></li>
+        <li><span class="content-num">4</span><div><strong>Convivência e visitas</strong><small>Páginas 21 a 24</small><p>Anotações objetivas sobre visitas, horários e combinados.</p></div></li>
+        <li><span class="content-num">5</span><div><strong>Documentos e atendimento</strong><small>Páginas 25 a 28</small><p>Checklist, protocolos, ficha-resumo e perguntas para levar.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="como-funciona" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Simples de usar</p>
+        <h2 id="how-title">Da compra à organização, em 3 passos</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-number">PASSO 01</span><h3>Receba o PDF</h3><p>Após a confirmação da compra, o arquivo é enviado para o e-mail informado.</p></div>
+        <div class="step"><span class="step-number">PASSO 02</span><h3>Preencha ou imprima</h3><p>Use um leitor de PDF compatível no celular ou computador, ou preencha à mão.</p></div>
+        <div class="step"><span class="step-number">PASSO 03</span><h3>Comece pelo roteiro</h3><p>Siga as primeiras etapas, registre o que aconteceu e prepare seus documentos.</p></div>
+      </div>
+      <div class="cta-inline">
+        <a class="button checkout-link" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero começar por R$ 19,90 <span class="button-arrow" aria-hidden="true">→</span></a>
+        <p>Pagamento único. Sem assinatura.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-break"><div class="container"><p>Você não precisa lembrar todos os detalhes de cabeça. O caderno está aqui para ajudar a registrar.</p></div></div>
+
+  <section class="section price-section" id="preco" aria-labelledby="pricing-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Acesso ao material completo</p>
+        <h2 id="pricing-title">Organize seus registros a partir de hoje</h2>
+        <p class="section-lead">Um material de trabalho para consultar, preencher e guardar.</p>
+      </div>
+      <div class="price-card">
+        <div class="price-ribbon">Caderno da Pensão e da Convivência · PDF A4</div>
+        <div class="price-layout">
+          <div class="price-art">
+            <img src="assets/mockup-hero-premium.webp" width="800" height="600" alt="Mockup do Caderno da Pensão e da Convivência" loading="lazy" decoding="async">
+            <p>Material digital para uso pessoal.</p>
+          </div>
+          <div class="price-copy">
+            <h2>Caderno completo com 29 páginas</h2>
+            <p class="price-intro">Preenchível no celular ou no computador e pronto para imprimir.</p>
+            <span class="price-label">Pagamento único</span>
+            <strong class="price-value">R$ 19,90</strong>
             <ul class="price-list">
               <li>Roteiro das primeiras 48 horas</li>
-              <li>Registro de pagamentos e atrasos por 2 anos</li>
+              <li>Controle de pagamentos e atrasos por 2 anos</li>
               <li>Índice de provas, gastos e visitas</li>
-              <li>Checklist e ficha-resumo para o atendimento</li>
+              <li>Checklist e ficha-resumo do caso</li>
             </ul>
-            <a class="button" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero organizar meu caso agora <span class="arrow" aria-hidden="true">→</span></a>
-            <p class="small-note">Pagamento único · acesso imediato · garantia de 7 dias</p>
-          </div>
-        </div>
-        <p class="extras-note">No checkout, você pode acrescentar materiais opcionais — como 27 modelos de mensagem, registro de gastos, calendário de convivência 2027, checklist de documentos da criança e o guia de prints. Nenhum deles é obrigatório.</p>
-      </div>
-    </section>
-
-    <section class="section guarantee" aria-labelledby="guarantee-title">
-      <div class="container">
-        <div class="guarantee-card">
-          <span class="guarantee-icon" aria-hidden="true">7d</span>
-          <div>
-            <h2 id="guarantee-title">Você tem 7 dias para pedir o reembolso</h2>
-            <p>Se por qualquer motivo o material não for o que você esperava, peça o reembolso em até 7 dias e devolvemos 100% do valor.</p>
+            <a class="button checkout-link" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero garantir meu caderno <span class="button-arrow" aria-hidden="true">→</span></a>
+            <p class="price-foot">Você será direcionado ao checkout da Wiven · acesso por e-mail após pagamento confirmado</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section faq" id="duvidas" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="center">
-          <span class="eyebrow">Dúvidas</span>
-          <h2 class="section-title" id="faq-title">Perguntas frequentes</h2>
-        </div>
-        <div class="faq-wrap">
-          <details open>
-            <summary>Recebo como?</summary>
-            <p>Por e-mail, logo depois da confirmação do pagamento. Confira também a caixa de spam ou promoções.</p>
-          </details>
-          <details>
-            <summary>Consigo preencher no celular?</summary>
-            <p>Sim, com um app de PDF que aceite formulários, como o Adobe Acrobat Reader. Alguns visualizadores só mostram o arquivo. Nesse caso, use o Acrobat ou imprima.</p>
-          </details>
-          <details>
-            <summary>Posso imprimir?</summary>
-            <p>Sim, quantas vezes precisar, para uso pessoal.</p>
-          </details>
-          <details>
-            <summary>Isso garante que vou receber a pensão?</summary>
-            <p>Não. O caderno organiza o seu caso e os primeiros passos. Quem orienta o caminho é um(a) advogado(a) ou a Defensoria Pública.</p>
-          </details>
-          <details>
-            <summary>Serve se a pensão ainda não foi definida?</summary>
-            <p>Sim, para organizar gastos, conversas e convivência. O primeiro passo, nesse caso, é buscar orientação para pedir a fixação.</p>
-          </details>
-          <details>
-            <summary>Tem suporte?</summary>
-            <p>Sim, pelo WhatsApp <a href="https://wa.me/5522981383963" rel="noopener noreferrer">(22) 98138-3963</a>, para dúvidas sobre o arquivo. O suporte não dá orientação jurídica.</p>
-          </details>
-        </div>
-        <div class="faq-end">
-          <p>Você não precisa resolver tudo hoje. Só precisa começar organizado(a).</p>
-          <a class="button" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero o meu caderno por R$ 19,90 <span class="arrow" aria-hidden="true">→</span></a>
-          <p class="small-note">Pagamento único · acesso imediato por e-mail · garantia de 7 dias</p>
-        </div>
+      <div class="guarantee">
+        <div class="guarantee-seal" aria-hidden="true">7<br>dias</div>
+        <div><h3>7 dias para pedir reembolso</h3><p>Se o material não for o que você esperava, solicite o reembolso dentro do prazo de 7 dias.</p></div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <strong>Caderno da Pensão e da Convivência</strong>
-      <p>Material educativo e de organização · não substitui advogado(a) ou Defensoria Pública. Não garante pagamento nem prisão nem nenhum resultado no processo.</p>
-      <p>Dúvidas sobre o arquivo: WhatsApp <a href="https://wa.me/5522981383963" rel="noopener noreferrer">(22) 98138-3963</a></p>
+      <p class="offer-small">No checkout, podem aparecer materiais complementares opcionais. Eles não são necessários para comprar o caderno principal.</p>
     </div>
-  </footer>
+  </section>
+
+  <section class="section section-alt" id="duvidas" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Antes de comprar</p>
+        <h2 id="faq-title">Dúvidas frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Como recebo o material?</summary><p>Depois da confirmação do pagamento, o PDF é enviado para o e-mail informado na compra. Confira também spam e promoções.</p></details>
+        <details><summary>Consigo preencher pelo celular?</summary><p>Sim, usando um aplicativo leitor de PDF com suporte a formulários, como o Adobe Acrobat Reader. Se o visualizador não permitir edição, abra em outro leitor ou imprima.</p></details>
+        <details><summary>Posso imprimir as páginas?</summary><p>Sim. O arquivo é em tamanho A4 e pode ser impresso para uso pessoal.</p></details>
+        <details><summary>Serve se a pensão ainda não foi definida?</summary><p>O caderno também ajuda a organizar gastos e convivência. Para pedir a fixação da pensão, procure orientação de advogado(a) ou da Defensoria Pública.</p></details>
+        <details><summary>Este material garante que a pensão será paga?</summary><p>Não. É um material educativo e de organização, não um serviço jurídico. Ele não substitui a orientação profissional nem garante resultado judicial.</p></details>
+        <details><summary>Como peço ajuda com o arquivo?</summary><p>Para dúvidas de acesso ao PDF, entre em contato no WhatsApp <a href="https://wa.me/5522981383963" rel="noopener noreferrer">(22) 98138-3963</a>. O suporte não presta orientação jurídica.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <aside class="disclaimer">
+    <div class="container">
+      <p><strong>Importante:</strong> este é um material educativo e de organização. Não substitui advogado(a), Defensoria Pública, decisão judicial ou atendimento especializado. Não garante pagamento de pensão ou qualquer resultado no processo. Em situações de violência ou risco, procure ajuda pelos canais 190 ou 180.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <strong>Caderno da Pensão e da Convivência</strong>
+    <p>Material digital · pagamento único · uso pessoal</p>
+    <p>Dúvidas sobre o arquivo: WhatsApp <a href="https://wa.me/5522981383963" rel="noopener noreferrer">(22) 98138-3963</a></p>
+  </div>
+</footer>
+
+<div class="sticky-buy" id="sticky-buy" aria-label="Comprar o Caderno da Pensão">
+  <span class="sticky-price">Pagamento único<strong>R$ 19,90</strong></span>
+  <a class="checkout-link" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">Quero meu caderno →</a>
+</div>
+<script>
+(function () {
+  'use strict';
+  // Mantém somente parâmetros de campanha conhecidos nos links originais da Wiven.
+  try {
+    var incoming=new URLSearchParams(window.location.search);
+    var allowed=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
+    document.querySelectorAll('a.checkout-link').forEach(function(a){
+      var url=new URL(a.href);
+      if(url.hostname!=='checkout.wiven.com.br')return;
+      allowed.forEach(function(key){var val=incoming.get(key);if(val && val.length<500)url.searchParams.set(key,val)});
+      a.href=url.toString();
+    });
+  } catch (e) {}
+  // Barra fixa só aparece quando o visitante ultrapassou o primeiro bloco.
+  var hero=document.querySelector('.hero');
+  var sticky=document.getElementById('sticky-buy');
+  if(hero&&sticky&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){sticky.classList.toggle('is-visible',!entry.isIntersecting&&entry.boundingClientRect.top<0)});
+    },{threshold:0}).observe(hero);
+  }
+})();
+</script>
 </body>
 </html>
