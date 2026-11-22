@@ -33,3 +33,12 @@ As páginas não inventam valores nem botões de cobrança: os detalhes precisam
 
 ## Cuidados no deploy
 Não sobrescrever outro site no domínio sem verificar o diretório correto. Para Hostinger, use o repositório `jhonyv02/pensao-funil` e a branch `main`.
+
+## Rastreamento Meta Pixel
+- Pixel ID: `1186425164337289`.
+- `index.html`: `PageView` e evento padrao `ViewContent`.
+- `upsell.html`: `PageView` e evento personalizado `UpsellView` (funnel_stage: upsell).
+- `downsell.html`: `PageView` e evento personalizado `DownsellView` (funnel_stage: downsell).
+- `obrigado.html`: somente `PageView`. Visitar esta URL nao comprova pagamento.
+- **Nao disparar Purchase nestas paginas.** Purchase (valor, moeda, status pago e deduplicacao com CAPI, se aplicavel) deve estar configurado na Wiven sobre confirmacao real da transacao.
+- Verificar eventos no Gerenciador de Eventos da Meta > Testar eventos apos deploy na Hostinger, sem adblock; checar duplicidade se houver GTM ou Pixel injetado pela hospedagem.
