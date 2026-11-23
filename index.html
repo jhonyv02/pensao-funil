@@ -199,10 +199,6 @@ fbq('track','ViewContent',{content_name:'Caderno da Pensao e da Convivencia',con
     <p>Suporte ao arquivo: <a href="https://wa.me/5522981383963" rel="noopener noreferrer">WhatsApp (22) 98138-3963</a>.</p>
   </div>
 </footer>
-<div class="sticky" id="sticky" aria-label="Comprar o Caderno da Pensão">
-  <div><small>Pagamento único</small><strong>R$ 19,90</strong></div>
-  <a class="buy" href="https://checkout.wiven.com.br/checkout/cmwqzun040dp701ol4zjjmjjb?offer=0DXLAD1">QUERO MEU PDF →</a>
-</div>
 <script>
 (function(){
   'use strict';
@@ -223,12 +219,6 @@ fbq('track','ViewContent',{content_name:'Caderno da Pensao e da Convivencia',con
       el.href=u.toString();
     });
   }catch(e){}
-  var hero=document.querySelector('.hero'),bar=document.getElementById('sticky');
-  if(hero&&bar&&'IntersectionObserver' in window){
-    new IntersectionObserver(function(es){es.forEach(function(e){
-      bar.classList.toggle('show',!e.isIntersecting&&e.boundingClientRect.top<0);
-    });},{threshold:0}).observe(hero);
-  }
 })();
 </script>
 </body>
