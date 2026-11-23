@@ -1,0 +1,19 @@
+{
+  "name": "Conta Certa — Controle de Pensão",
+  "short_name": "Conta Certa",
+  "description": "Controle privado e local de pagamentos, gastos e convivência.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f1",
+  "theme_color": "#174b3d",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
