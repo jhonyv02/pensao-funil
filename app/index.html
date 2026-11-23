@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#174b3d">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Organize pagamentos, despesas, comprovantes e convivência em um painel privado.">
+  <title>Conta Certa — Meu controle de pensão</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css?v=1">
+  <script src="./app.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <div class="privacy-strip"><span class="dot"></span> SEUS DADOS FICAM NESTE DISPOSITIVO · COFRE CRIPTOGRAFADO</div>
+  <section class="gate" id="gate" aria-labelledby="gate-title">
+    <div class="gate-shell">
+      <div class="brand"><span class="brand-mark">✓</span><span>Conta <b>Certa</b><small>Controle de pensão</small></span></div>
+      <div class="gate-grid">
+        <div class="gate-intro">
+          <p class="eyebrow">MENOS CONFUSÃO. MAIS CONTROLE.</p>
+          <h1 id="gate-title">O que entrou?<br><em>O que faltou?</em></h1>
+          <p>Pagamentos. Gastos dos filhos. Comprovantes. Tudo organizado por mês.</p>
+          <div class="feature-mini"><span>✓ Controle mensal</span><span>✓ Registro de gastos</span><span>✓ Histórico de convivência</span><span>✓ Relatório para imprimir</span></div>
+          <p class="callout">Este é um controle pessoal. Não cobra pensão, não calcula juros nem substitui orientação jurídica.</p>
+        </div>
+        <div class="gate-card">
+          <p class="kicker" id="gate-mode">PRIMEIRO ACESSO</p>
+          <h2 id="gate-card-title">Crie seu cofre privado</h2>
+          <p id="gate-desc" class="muted">Escolha uma senha com pelo menos 8 caracteres. Ela protege os registros neste navegador.</p>
+          <form id="gate-form" autocomplete="off">
+            <label for="pass">Sua senha</label>
+            <input id="pass" name="pass" type="password" autocomplete="new-password" minlength="8" required placeholder="Pelo menos 8 caracteres">
+            <div id="confirm-wrap"><label for="pass-confirm">Repita a senha</label><input id="pass-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Repita a mesma senha"></div>
+            <button class="primary full" type="submit" id="gate-submit">CRIAR MEU COFRE</button>
+          </form>
+          <p class="error" id="gate-error" role="alert" hidden></p>
+          <p class="small-warning">Sem conta e sem nuvem nesta versão. Se apagar os dados do navegador ou perder a senha, não será possível recuperar sem um backup. Faça cópias pelo painel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="app-shell" hidden>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="brand"><span class="brand-mark">✓</span><span>Conta <b>Certa</b><small>Meu controle</small></span></div>
+        <div class="header-actions"><span class="secure-chip">Privado neste aparelho</span><button class="ghost small-btn" id="lock" type="button">Bloquear</button></div>
+      </div>
+    </header>
+    <main id="main" class="container workspace">
+      <div class="heading">
+        <div><p class="eyebrow">SEU PAINEL PRIVADO</p><h1>Seu controle. <em>Sem bagunça.</em></h1><p class="muted">Registre os fatos. Confira os números. Encontre o histórico.</p></div>
+        <button class="primary" id="new-entry" type="button">+ NOVO REGISTRO</button>
+      </div>
+      <nav class="tabs" aria-label="Seções">
+        <button type="button" data-tab="dashboard" class="active">Visão geral</button>
+        <button type="button" data-tab="payments">Pagamentos</button>
+        <button type="button" data-tab="expenses">Gastos</button>
+        <button type="button" data-tab="visits">Convivência</button>
+        <button type="button" data-tab="settings">Ajustes</button>
+      </nav>
+
+      <section id="tab-dashboard" class="tab-panel">
+        <div class="monthbar"><div><span class="eyebrow">MÊS EM FOCO</span><h2 id="month-title">Seu mês</h2></div><div class="month-actions"><button class="ghost" id="month-prev" aria-label="Mês anterior">‹</button><input id="month-input" type="month" aria-label="Mês a consultar"><button class="ghost" id="month-next" aria-label="Mês seguinte">›</button></div></div>
+        <div class="stats">
+          <article class="stat"><span>Valor previsto</span><strong id="stat-expected">R$ 0,00</strong><small>Valor mensal definido por você</small></article>
+          <article class="stat"><span>Total recebido</span><strong id="stat-received">R$ 0,00</strong><small>Pagamentos deste mês</small></article>
+          <article class="stat highlight"><span>Diferença simples</span><strong id="stat-gap">R$ 0,00</strong><small>Sem juros ou correção legal</small></article>
+          <article class="stat"><span>Gastos registrados</span><strong id="stat-expenses">R$ 0,00</strong><small>Despesas dos filhos</small></article>
+        </div>
+        <div class="split">
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">RESUMO</p><h3>Como foi este mês?</h3></div><span id="status-pill" class="pill">Sem registros</span></div>
+            <div class="progress"><span id="progress-fill"></span></div><p class="muted" id="status-text">Cadastre um valor mensal em Ajustes para começar.</p>
+            <button class="text-action" id="go-settings" type="button">Definir valor mensal →</button></article>
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">DOCUMENTOS</p><h3>Seus comprovantes</h3></div></div>
+            <p class="attachment-count" id="attachment-count">Nenhum arquivo salvo</p>
+            <p class="muted">Você pode anexar imagens ou PDFs a um pagamento ou gasto. Tudo fica criptografado neste navegador.</p>
+            <button class="text-action" id="go-payments" type="button">Ver pagamentos →</button>
+          </article>
+        </div>
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">ÚLTIMOS REGISTROS</p><h3>O que aconteceu</h3></div><button class="outline" id="print-report" type="button">Imprimir resumo / Salvar PDF</button></div>
+          <div id="recent-list" class="records"><p class="empty">Sem registros neste mês.</p></div>
+        </div>
+      </section>
+
+      <section id="tab-payments" class="tab-panel" hidden>
+        <div class="section-heading"><div><p class="eyebrow">ENTRADAS</p><h2>Pagamentos recebidos</h2><p class="muted">Anote cada depósito. Inclusive pagamentos parciais.</p></div><button class="primary add-kind" data-kind="payment">+ PAGAMENTO</button></div>
+        <div class="panel"><div class="panel-head"><h3>Histórico</h3><span class="muted">Todos os meses</span></div><div id="payments-list" class="records"></div></div>
+      </section>
+      <section id="tab-expenses" class="tab-panel" hidden>
+        <div class="section-heading"><div><p class="eyebrow">SAÍDAS</p><h2>Gastos dos filhos</h2><p class="muted">Escola, alimentação, saúde e outros gastos.</p></div><button class="primary add-kind" data-kind="expense">+ GASTO</button></div>
+        <div class="panel"><div class="panel-head"><h3>Despesas registradas</h3><span class="muted">Todos os meses</span></div><div id="expenses-list" class="records"></div></div>
+      </section>
+      <section id="tab-visits" class="tab-panel" hidden>
+        <div class="section-heading"><div><p class="eyebrow">DATAS E COMBINADOS</p><h2>Convivência</h2><p class="muted">Registre fatos e horários sem julgamentos.</p></div><button class="primary add-kind" data-kind="visit">+ REGISTRO</button></div>
+        <div class="panel"><div class="panel-head"><h3>Histórico de convivência</h3></div><div id="visits-list" class="records"></div></div>
+      </section>
+      <section id="tab-settings" class="tab-panel" hidden>
+        <div class="section-heading"><div><p class="eyebrow">PERSONALIZE</p><h2>Seu controle</h2><p class="muted">Defina o valor mensal de referência. Você pode mudar depois.</p></div></div>
+        <div class="settings-grid">
+          <article class="panel">
+            <h3>Valor mensal de referência</h3>
+            <form id="settings-form"><label for="monthly-value">Valor previsto por mês (R$)</label><input id="monthly-value" type="number" min="0" step="0.01" inputmode="decimal" value="0" required><p class="muted">Este valor é só uma referência que você informa. O app não calcula direitos ou valores judiciais.</p><button type="submit" class="primary">SALVAR VALOR</button></form>
+          </article>
+          <article class="panel">
+            <h3>Backup e privacidade</h3>
+            <p class="muted">Os registros ficam criptografados apenas neste dispositivo. Sem sincronização e sem rastreadores nesta área.</p>
+            <button type="button" class="outline full" id="backup">Baixar backup criptografado</button>
+            <label class="restore-label" for="restore">Restaurar backup criptografado</label><input id="restore" type="file" accept=".json,application/json">
+            <p class="tiny">Guarde o arquivo e a senha em locais seguros. Importar substitui os dados deste aparelho.</p>
+            <button class="danger" type="button" id="clear-all">Apagar todos os dados deste aparelho</button>
+          </article>
+        </div>
+        <article class="panel notice"><strong>Atenção</strong><p>Este aplicativo é um organizador pessoal, não um serviço de advocacia. Registros e imagens não têm validade jurídica garantida. Para cobranças, revisões e prazos, procure um profissional ou a Defensoria.</p></article>
+      </section>
+      <footer class="footer">Conta Certa · Versão beta local · Sem cobrança ou assinatura nesta versão · <span>Seus dados continuam no seu aparelho.</span></footer>
+    </main>
+  </div>
+  <dialog id="entry-dialog" aria-labelledby="dialog-title">
+    <form id="entry-form" class="entry-form">
+      <div class="dialog-head"><div><p class="eyebrow">NOVO REGISTRO</p><h2 id="dialog-title">Anotar pagamento</h2></div><button type="button" class="ghost" id="close-dialog" aria-label="Fechar">✕</button></div>
+      <label for="kind">Tipo</label><select id="kind"><option value="payment">Pagamento</option><option value="expense">Gasto</option><option value="visit">Convivência</option></select>
+      <div id="money-fields">
+        <label for="amount">Valor (R$)</label><input id="amount" type="number" min=".01" step=".01" inputmode="decimal" placeholder="0,00">
+        <label for="entry-month">Mês de referência</label><input id="entry-month" type="month">
+        <div id="category-box"><label for="category">Tipo de gasto</label><select id="category"><option>Alimentação</option><option>Saúde</option><option>Escola</option><option>Roupas</option><option>Transporte</option><option>Moradia</option><option>Outros</option></select></div>
+      </div>
+      <label for="entry-date">Data</label><input id="entry-date" type="date" required>
+      <label for="entry-note">Observação (opcional)</label><textarea id="entry-note" rows="3" maxlength="500" placeholder="Anote só os fatos importantes"></textarea>
+      <div id="attachment-box"><label for="attachment">Comprovante (opcional, até 1 MB)</label><input id="attachment" type="file" accept="image/png,image/jpeg,image/webp,application/pdf"><small>Arquivo guardado no cofre deste dispositivo.</small></div>
+      <p class="error" id="entry-error" role="alert" hidden></p>
+      <button type="submit" class="primary full" id="save-entry">SALVAR REGISTRO</button>
+    </form>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
